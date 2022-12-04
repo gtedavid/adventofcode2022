@@ -1,4 +1,4 @@
-
+# witout any library
 INPUT_PATH = "3rd\input.txt"
 
 def part1(path_in):
@@ -43,3 +43,7 @@ if __name__ == "__main__":
     sum_priorities = part1(INPUT_PATH)
     # Part One
     print(f"Sum of priorities: {sum_priorities}")
+
+# References:
+# for the common letter https://python-programs.com/python-program-to-find-common-characters-between-two-strings/
+# https://www.geeksforgeeks.org/python-convert-list-to-string/
