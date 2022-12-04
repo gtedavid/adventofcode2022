@@ -31,27 +31,27 @@ def part2(path_in):
         for line in input_file.readlines():
             if re.search("^A..$", str(line.strip())):
                 if re.search("..X$",str(line.strip())):
-                    points += 8; # choose paper to win
+                    points += 3; # choose scissors to loose
                 if re.search("..Y$",str(line.strip())):
                     points += 4; #choose rock to ex-aequo 
                 if re.search("..Z$",str(line.strip())):
-                    points += 3; #choose scissors to loose
+                    points += 8; #choose paper to win
 
             if re.search("^B..$", str(line.strip())):
                 if re.search("..X$",str(line.strip())):
-                    points += 9; # choose scissors to win
+                    points += 1; #  choose rock to loose 
                 if re.search("..Y$",str(line.strip())):
                     points += 5; #choose paper to ex-aequo 
                 if re.search("..Z$",str(line.strip())):
-                    points += 1;  #choose rock to loose
+                    points += 9;  #choose scissors to win
             
             if re.search("^C..$", str(line.strip())):
                 if re.search("..X$",str(line.strip())):
-                    points += 7; # choose rock to win
+                    points += 2; # choose paper to loose
                 if re.search("..Y$",str(line.strip())):
                     points += 6; #choose scissors to ex-aequo
                 if re.search("..Z$",str(line.strip())):
-                    points += 2; #choose paper to loose
+                    points += 7; #choose rock to win
         return points
 
 
